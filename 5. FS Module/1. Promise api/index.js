@@ -8,7 +8,7 @@ import * as fs from "fs/promises";
 //   console.log(error);
 // }
 
-// Read the directory / folder
+// Read the content files
 
 // try {
 //   const files = await fs.readdir("D:\\xuxn\\node");
@@ -23,8 +23,26 @@ import * as fs from "fs/promises";
 // Remove the directory or folder
 
 // try {
-//   await fs.mkdir("D:\\xuxn\\node");
+//   await fs.rmdir("D:\\xuxn\\node");
 //   console.log("Folder read");
+// } catch (error) {
+//   console.log(error);
+// }
+
+// create and write files
+
+// try {
+//   await fs.writeFile("notes.txt", "Hello nodejs");
+//   console.log("Folder read");
+// } catch (error) {
+//   console.log(error);
+// }
+
+// read file
+
+// try {
+//   const file = await fs.readFile("notes.txt", "utf-8");
+//   console.log(file);
 // } catch (error) {
 //   console.log(error);
 // }
